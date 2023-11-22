@@ -1,0 +1,66 @@
+Estructura básica de un formulario en HTML:
+html
+Copy code
+<form action="/ruta-del-procesamiento" method="post/get">
+  <!-- Campos del formulario -->
+</form>
+<form>: Define el inicio del formulario.
+action: Especifica la URL a la que se enviarán los datos del formulario para ser procesados.
+method: Determina si los datos serán enviados usando el método GET (datos en la URL) o POST (datos en el cuerpo de la solicitud HTTP).
+Tipos de campos en un formulario:
+1. Input:
+El elemento <input> es versátil y se utiliza para diferentes tipos de entradas de datos.
+
+Texto (type="text"): Para ingresar texto corto.
+
+html
+Copy code
+<input type="text" name="nombre" placeholder="Tu nombre">
+Contraseña (type="password"): Para ingresar contraseñas.
+
+html
+Copy code
+<input type="password" name="contrasena" placeholder="Contraseña">
+Número (type="number"): Para ingresar números.
+
+html
+Copy code
+<input type="number" name="edad" min="18" max="100">
+Correo electrónico (type="email"): Para ingresar direcciones de correo electrónico.
+
+html
+Copy code
+<input type="email" name="email" placeholder="correo@ejemplo.com">
+Checkbox (type="checkbox"): Para seleccionar opciones múltiples.
+
+html
+Copy code
+<input type="checkbox" name="intereses[]" value="opcion1">
+<input type="checkbox" name="intereses[]" value="opcion2">
+Radio (type="radio"): Para seleccionar una opción de entre varias.
+
+html
+Copy code
+<input type="radio" name="opcion" value="opcion1">
+<input type="radio" name="opcion" value="opcion2">
+Botón (type="submit" o type="button"): Para enviar o resetear el formulario.
+
+html
+Copy code
+<input type="submit" value="Enviar">
+<input type="reset" value="Resetear">
+2. Textarea:
+Permite introducir texto extenso.
+
+html
+Copy code
+<textarea name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
+3. Select:
+Para crear menús desplegables.
+
+html
+Copy code
+<select name="opciones">
+  <option value="opcion1">Opción 1</option>
+  <option value="opcion2">Opción 2</option>
+</select>
